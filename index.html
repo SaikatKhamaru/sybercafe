@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+       
+        <div class="nav-links" id="nav-links">
+            <a href="#home" onclick="scrollToSection('home')">Home</a>
+            <a href="#services" onclick="scrollToSection('services')">Services</a>
+            <a href="#gallery" onclick="scrollToSection('gallery')">Gallery</a>
+            <a href="#about" onclick="scrollToSection('about')">About Us</a>
+            <a href="#contact" onclick="scrollToSection('contact')">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <img src="images/hero.jpg" alt="Hero Image">
+        <button class="contact-button" onclick="scrollToSection('contact')">Contact Us</button>
+    </div>
+
+    <section id="home" class="section">
+        <h2>Home</h2>
+        <img src="images/home.jpg" alt="Home Image">
+        <p>Welcome to our website! Here is some introductory text about our services.</p>
+    </section>
+
+
+
+
+
+    <section id="services" class="section">
+        <h2>Services</h2>
+        <p>Here are some of the services we offer:</p>
+        <div class="card-slider">
+            <div class="card">
+                <img src="images/download.png" alt="Service 1">
+                <h3>AADHAR CARD</h3>
+                <p>Short description of service 1.</p>
+            </div>
+            <div class="card">
+                <img src="images/images.jfif" alt="Service 2">
+                <h3>PAN CARD</h3>
+                <p>Short description of service 2.</p>
+            </div>
+            <div class="card">
+                <img src="images/download.jfif" alt="Service 3">
+                <h3>VOTER CARD</h3>
+                <p>Short description of service 3.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Service 1">
+                <h3>Service 1</h3>
+                <p>Short description of service 1.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Service 2">
+                <h3>Service 2</h3>
+                <p>Short description of service 2.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Service 3">
+                <h3>Service 3</h3>
+                <p>Short description of service 3.</p>
+            </div>
+        
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <p>Check out our gallery of images:</p>
+        <div class="card-slider">
+            <div class="card">
+                <img src="images/G1.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="card">
+                <img src="images/G2.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="card">
+                <img src="images/G3.jpg" alt="Gallery Image 3">
+            </div>
+          
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <img src="images/AB.jpg" alt="About Image">
+        <p>Learn more about us and our mission.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <img src="images/CO.jpg" alt="Contact Image">
+        <p>Get in touch with us through social media:</p>
+        <div class="social-links">
+            <a href="#">YouTube</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Telegram</a>
+            <a href="#">WhatsApp</a>
+            <a href="mailto:example@gmail.com">Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+  
+</html>
